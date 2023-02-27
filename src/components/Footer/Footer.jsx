@@ -1,12 +1,13 @@
 import s from './Footer.module.css'
 import logo from '../../assets/img/logo-o.svg'
 import classNames from 'classnames'
+import { Container } from '../Container/Container'
 
 export const Footer = () => {
   return (
     <>
       <footer className={s.footer}>
-        <div className={s.container}>
+        <Container className={s.container}>
           <div className={s.content}>
             <img className={s.logo} src={logo} alt='Логотип YourMeal' />
 
@@ -77,7 +78,7 @@ export const Footer = () => {
               </p>
             </div>
           </div>
-        </div>
+        </Container>
       </footer>
     </>
   )
